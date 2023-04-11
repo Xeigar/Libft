@@ -13,10 +13,10 @@ OBJT = ${SRCS:c=o}
 BON_OBJT = ${BONSRCS:c=o}
 
 %.o: %.c 
-	cc $(FLAGS) -c $<
+	cc $(FLAGS) -I . -c $<
 
 $(NAME): $(OBJT)
-	ar rcs $(NAME) $(OBJT) libft.h
+	ar rcs $(NAME) $(OBJT)
 
 all: $(NAME)
 
@@ -29,6 +29,6 @@ fclean: clean
 re: fclean all
 
 bonus: $(BON_OBJT)
-	ar rcs $(NAME) $(BON_OBJT) libft.h
+	ar rcs $(NAME) $(BON_OBJT)
 
 .PHONY: all clean fclean re bonus

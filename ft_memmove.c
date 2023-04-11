@@ -1,31 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tmoutinh <tmoutinh@student.42porto.com     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/04/11 14:39:17 by tmoutinh          #+#    #+#             */
+/*   Updated: 2023/04/11 19:34:05 by tmoutinh         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-		size_t	i;
-		char	*t_dest;
-		char	*t_src;
+	size_t	i;
+	char	*t_dest;
+	char	*t_src;
 
-		if (!dest && !src)
-				return (NULL);
-		t_dest = (char *)dest;
-		t_src = (char *)src;
-		i = 0;
-		if (t_dest > t_src)
+	if (!dest && !src)
+		return (NULL);
+	t_dest = (char *)dest;
+	t_src = (char *)src;
+	i = 0;
+	if (t_dest > t_src)
+	{
+		while (i < n)
 		{
-				while (i < n)
-				{
-						t_dest[n - i - 1] = t_src[n - i - 1];
-						i++;
-				}
+			t_dest[n - i - 1] = t_src[n - i - 1];
+			i++;
 		}
-		else
+	}
+	else
+	{
+		while (i <= n)
 		{
-				while (i <= n)
-				{
-						t_dest[i] = t_src[i];
-						i++;
-				}
+			t_dest[i] = t_src[i];
+			i++;
 		}
-		return (t_dest);
+	}
+	return (t_dest);
 }
