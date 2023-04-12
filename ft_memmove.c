@@ -44,5 +44,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	t_dest = (char *)dest;
 	t_src = (char *)src;
+	fill(t_dest, t_src, n);
 	return (t_dest);
 }
