@@ -23,3 +23,14 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+
+/*#include <fcntl.h>
+int main(void)
+{
+	int	fd;
+
+	fd = open("test", O_RDWR | O_CREAT, 0666);
+	ft_putendl_fd('c', fd);
+	close(fd);
+	return 0;
+}*/

@@ -30,3 +30,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("%s\n", ft_memchr("Hello how", 'h', 3));
+	return 0;
+}*/

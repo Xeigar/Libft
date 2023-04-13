@@ -23,3 +23,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+/*
+char add(unsigned int i, char s)
+{
+	(void) i;
+	s = s +1;
+	return (s);
+}
+int main(void)
+{
+	printf("%s\n", ft_strmapi("Hello", &add));
+	return 0;
+}
+*/

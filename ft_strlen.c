@@ -19,3 +19,10 @@ int	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
+/*int main (void)
+{
+	char *str = "Hello";
+	printf("%i \n",ft_strlen(str));
+	return 0;
+}*/

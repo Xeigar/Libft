@@ -32,3 +32,13 @@ int	ft_atoi(const char *s)
 	}
 	return (i * neg);
 }
+
+/*
+#include <stdio.h>
+int main (void)
+{
+	char	*str = "	 ---+-+-++2147483648a2b567";
+	printf("%i\n", ft_atoi(str));
+	return (0);
+}
+*/

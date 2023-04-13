@@ -33,3 +33,17 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	tab[i] = '\0';
 	return (tab);
 }
+
+/*
+char add(unsigned int i, char s)
+{
+	(void) i;
+	s = s +1;
+	return (s);
+}
+int main(void)
+{
+	printf("%s\n", ft_strmapi("Hello", &add));
+	return 0;
+}
+*/

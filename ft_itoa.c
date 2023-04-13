@@ -54,3 +54,9 @@ char	*ft_itoa(int n)
 	}
 	return (tab);
 }
+
+/*int main(void)
+{
+	printf("%s\n", ft_itoa(123156));
+	return (0);
+}*/

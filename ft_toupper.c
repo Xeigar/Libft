@@ -22,3 +22,16 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	char a;
+	char b;
+
+	a = 'A';
+	b = 'b';
+	printf("%c\n%c\n", ft_toupper(a), ft_toupper(b));
+	return 0;
+}*/

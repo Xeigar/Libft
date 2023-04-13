@@ -14,7 +14,7 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t			i;
 
 	i = 0;
 	while (i < n)
@@ -24,3 +24,15 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+/*
+#include <stdio.h>
+int main (void)
+{
+	char str[50] = "Hello";
+	size_t	n;
+	n = 4;
+	ft_bzero(str,n);
+	printf("%s\n", str);
+	return (0);
+}*/

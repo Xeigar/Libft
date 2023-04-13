@@ -47,3 +47,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	fill(t_dest, t_src, n);
 	return (t_dest);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	char src[50] = "Hello how are you";
+	char dest[50];
+	ft_memmove(dest, src, 5);
+	printf("%s\n", dest);
+	return (0);
+}
+*/

@@ -34,3 +34,14 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &a, 1);
 	}
 }
+
+/*#include <fcntl.h>
+int main(void)
+{
+	int	fd;
+
+	fd = open("test", O_RDWR | O_CREAT, 0666);
+	ft_putnbr_fd(1233, fd);
+	close(fd);
+	return 0;
+}*/

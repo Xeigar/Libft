@@ -23,3 +23,16 @@ t_list	*ft_lstlast(t_list *lst)
 		current = current->next;
 	return (current);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	t_list *arr;
+	char *a = "hello";
+	arr = ft_lstnew(a);
+	arr->next = ft_lstnew("Hello1");
+	printf("%s\n", ft_lstlast(arr));
+	return 0;
+}
+*/

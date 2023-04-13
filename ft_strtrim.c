@@ -63,3 +63,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	fill(p, start, end, s1);
 	return (p);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	char	*s1 = "n \t\t  \n\n\nHello \t  Please\n Trim me\n";
+	char	*s2 = "\t	\n ";
+
+	printf("%s\n", ft_strtrim(s1, s2));
+	return 0;
+}
+*/

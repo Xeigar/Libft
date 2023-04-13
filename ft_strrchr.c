@@ -27,3 +27,11 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("%s\n", ft_strrchr("Hello how", 'h'));
+	return 0;
+}*/

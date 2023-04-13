@@ -22,3 +22,14 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
+
+/*#include <fcntl.h>
+int main(void)
+{
+	int	fd;
+
+	fd = open("test", O_RDWR | O_CREAT, 0666);
+	ft_putstr_fd("Hello how", fd);
+	close(fd);
+	return 0;
+}*/

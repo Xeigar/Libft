@@ -31,3 +31,12 @@ char	*ft_strdup(const char *s)
 	p[i] = '\0';
 	return (p);
 }
+
+/*int main(void)
+{
+	char *arra = "Hello";
+	
+	printf("%s", ft_strdup(arra));
+	
+	return (0);
+}*/

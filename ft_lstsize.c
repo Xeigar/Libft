@@ -26,3 +26,16 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	t_list *arr;
+	char *a = "hello";
+	arr = ft_lstnew(a);
+	arr->next = ft_lstnew(a);
+	printf("%i\n", ft_lstsize(arr));
+	return 0;
+}
+*/

@@ -29,3 +29,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 	dest[i] = '\0';
 	return (size);
 }
+
+/*int main (void)
+{
+	char *src="bleh bleh";
+	char dest[10];
+	ft_strlcpy(dest, src, 5);
+	printf("%s \n", dest);
+	printf("%i \n", ft_strlcpy(dest, src, 8));
+	return 0;
+}*/

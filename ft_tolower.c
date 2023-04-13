@@ -22,3 +22,16 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	char a;
+	char b;
+
+	a = 'A';
+	b = 'b';
+	printf("%c\n%c\n", ft_tolower(a), ft_tolower(b));
+	return 0;
+}*/

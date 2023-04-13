@@ -24,3 +24,15 @@ void	*ft_memset(void *s, char c, size_t n)
 	}
 	return (s);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	char str[50] = "Hello how are you";
+	printf("%s\n", str);
+	ft_memset(str, '$', 5);
+	printf("%s\n", str);
+	return (0);
+}
+*/

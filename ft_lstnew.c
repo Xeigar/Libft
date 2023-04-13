@@ -23,3 +23,15 @@ t_list	*ft_lstnew(void *content)
 	p->next = NULL;
 	return (p);
 }
+
+/*
+#include <stdio.h>
+int main(void)
+{
+	t_list *arr;
+	char *a = "Hello";
+	arr = ft_lstnew(a);
+	printf("%s\n", (char *)arr->content);
+	return 0;
+}
+*/
