@@ -27,7 +27,7 @@ static void	fill(char *t_dest, char *t_src, size_t n)
 	}
 	else
 	{
-		while (i <= n)
+		while (i < n)
 		{
 			t_dest[i] = t_src[i];
 			i++;
