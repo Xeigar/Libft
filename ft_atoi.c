@@ -10,25 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *s)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	neg;
 
 	i = 0;
 	neg = 1;
-	while (*s == 32 || (*s >= 9 && *s <= 13))
-		s++;
-	if (*s == '-' || *s == '+')
+	while (*nptr == 32 || (*nptr >= 9 && *nptr <= 13))
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
 	{
-		if (*s == '-')
+		if (*nptr == '-')
 			neg *= (-1);
-		s++;
+		nptr++;
 	}
-	while (*s >= '0' && *s <= '9')
+	while (*nptr >= '0' && *nptr <= '9')
 	{
-		i = i * 10 + (*s - 48);
-		s++;
+		i = i * 10 + (*nptr - 48);
+		nptr++;
 	}
 	return (i * neg);
 }

@@ -47,6 +47,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;
 	int		end;
+	int		size;
 	char	*p;
 
 	if (!s1)
@@ -55,9 +56,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (end != start && in(s1[end], set) == 0)
 			end--;
-	while (start != end && in(s1[start], set) == 0)
-		start++;
-	p = (char *)malloc(sizeof(*p) * (end - start + 2));
+	if (end == start)
+		size = 1;
+	else
+	{
+		while (start != end && in(s1[start], set) == 0)
+			start++;
+		size = end - start + 2;
+	}
+	p = (char *)malloc(sizeof(*p) * size);
 	if (p == NULL)
 		return (NULL);
 	fill(p, start, end, s1);
@@ -68,10 +75,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 #include <stdio.h>
 int main(void)
 {
-	char	*s1 = "n \t\t  \n\n\nHello \t  Please\n Trim me\n";
-	char	*s2 = "\t	\n ";
+	char	*s1 = "   xxx   xxx";
+	char	*s2 = " x";
+	char	*s3 = ft_strtrim(s1, s2);
 
 	printf("%s\n", ft_strtrim(s1, s2));
+	printf("%d\n", ft_strlen(s3));
 	return 0;
 }
 */

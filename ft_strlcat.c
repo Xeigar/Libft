@@ -20,25 +20,25 @@ static int	det_len(size_t n, size_t dest_size, int src_size)
 		return (src_size + n);
 }
 
-size_t	ft_strlcat(char *dest, const char *src, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	dest_size;
 	size_t	src_size;
 	size_t	lenghts;
 
-	if (n == 0 && !dest)
+	if (size == 0 && !dst)
 		return (0);
-	dest_size = ft_strlen(dest);
+	dest_size = ft_strlen(dst);
 	src_size = ft_strlen(src);
-	lenghts = det_len(n, dest_size, src_size);
+	lenghts = det_len(size, dest_size, src_size);
 	i = 0;
-	while (src[i] && (dest_size + i + 1) < n)
+	while (src[i] && (dest_size + i + 1) < size)
 	{
-		dest[dest_size + i] = src[i];
+		dst[dest_size + i] = src[i];
 		i++;
 	}
-	dest[dest_size + i] = '\0';
+	dst[dest_size + i] = '\0';
 	return (lenghts);
 }
 

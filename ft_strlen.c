@@ -10,7 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
@@ -23,6 +25,6 @@ int	ft_strlen(const char *s)
 /*int main (void)
 {
 	char *str = "Hello";
-	printf("%i \n",ft_strlen(str));
+	printf("%i \n",ft_strlen(str+2));
 	return 0;
 }*/

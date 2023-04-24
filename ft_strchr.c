@@ -14,11 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	int	i;
+	int	l;
+
+	i = ft_strlen(s);
+	l = 0;
+	while (l <= i)
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		if (s[l] == (char)c)
+			return ((char *)(s + l));
+		l++;
 	}
 	if (!c)
 		return ((char *)s);
@@ -29,6 +34,7 @@ char	*ft_strchr(const char *s, int c)
 #include <stdio.h>
 int main(void)
 {
-	printf("%s\n", ft_strrchr("Hello how", 'h'));
+	printf("%p\n", ft_strchr("teste", 1024));
+	printf("%p\n", strchr("teste", 1024));
 	return 0;
 }*/
